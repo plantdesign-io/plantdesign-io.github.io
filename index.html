@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="google" content="notranslate" />
+		<title>Plant Design I/O - Design, workflows, AVEVA productivity solutions.</title>
+		<link rel="canonical" href="https://www.plantdesign.io"/> 
+		<meta name="description" content="Explore Plant Design I/O products and services for your engineering or design business. Shop AVEVA Addins, and more. Find downloads and get support." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.plantdesign.io" />
+		<meta property="og:title" content="Plant Design I/O - Design, workflows, AVEVA productivity solutions." />
+		<meta property="og:description" content="Explore Plant Design I/O products and services for your engineering or design business. Shop AVEVA Addins, and more. Find downloads and get support." />
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<!-- Display the countdown timer in an element -->
+		<p id="countdownTimer"/>
+		<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Nov 1, 2022 12:00:00").getTime();
+
+					// Update the count down every 1 second
+					var x = setInterval(function() {
+
+					  // Get today's date and time
+					  var now = new Date().getTime();
+
+					  // Find the distance between now and the count down date
+					  var distance = countDownDate - now;
+
+					  // Time calculations for days, hours, minutes and seconds
+					  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					  // Display the result in the element with id="demo"
+					  document.getElementById("countdownTimer").innerHTML = days + "d " + hours + "h "
+					  + minutes + "m " + seconds + "s ";
+
+					  // If the count down is finished, write some text
+					  if (distance < 0) { clearInterval(x); document.getElementById("countdownTimer").innerHTML="We are up!" ; } }, 1000);
+		</script>
+	</body>
+</html>
